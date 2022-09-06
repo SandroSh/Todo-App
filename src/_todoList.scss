@@ -30,6 +30,11 @@ html {
   text-align: center;
   position: fixed;
   .left-inner-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
     .submit-div {
       padding: 20px;
       margin-top: 40px;
@@ -63,37 +68,38 @@ html {
         }
       }
     }
-  }
-  .statistics-container {
-    margin-top: 40px;
-    color: $white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    h2 {
-      margin-bottom: 30px;
-      letter-spacing: 10px;
-    }
-  }
+    .statistics-container {
+      margin-top: 40px;
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-  .info-container {
-    margin-top: 20px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-    background-color: $red;
-    padding: 15px;
-    img {
-      &:hover {
-        transition: all 0.5s linear;
-        transform: scale(1.2);
+      h2 {
+        margin-bottom: 30px;
+        letter-spacing: 10px;
       }
     }
-  }
-  .creator-h3 {
-    margin-top: 30px;
-    color: $white;
+
+    .info-container {
+      margin-top: 20px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-evenly;
+      background-color: $red;
+      padding: 15px;
+      img {
+        &:hover {
+          transition: all 0.5s linear;
+          transform: scale(1.2);
+        }
+      }
+    }
+    .creator-h3 {
+      margin: 30px 0;
+      color: $white;
+    }
   }
 }
 

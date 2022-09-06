@@ -13,7 +13,7 @@ function PieChart({ completedTasks, unCompletedTasks}){
                    
                     type="donut"
                     width={370}
-                    height={350}
+                    height={300}
                     series={[ completedTasks, unCompletedTasks]}
                     
                     options= {{

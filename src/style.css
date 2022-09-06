@@ -29,6 +29,19 @@ html {
   position: fixed;
 }
 
+.left-container .left-inner-div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .left-container .left-inner-div .submit-div {
   padding: 20px;
   margin-top: 40px;
@@ -79,7 +92,7 @@ html {
   font-weight: 900;
 }
 
-.left-container .statistics-container {
+.left-container .left-inner-div .statistics-container {
   margin-top: 40px;
   color: #ffffff;
   display: -webkit-box;
@@ -94,12 +107,12 @@ html {
           align-items: center;
 }
 
-.left-container .statistics-container h2 {
+.left-container .left-inner-div .statistics-container h2 {
   margin-bottom: 30px;
   letter-spacing: 10px;
 }
 
-.left-container .info-container {
+.left-container .left-inner-div .info-container {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,15 +127,15 @@ html {
   padding: 15px;
 }
 
-.left-container .info-container img:hover {
+.left-container .left-inner-div .info-container img:hover {
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.left-container .creator-h3 {
-  margin-top: 30px;
+.left-container .left-inner-div .creator-h3 {
+  margin: 30px 0;
   color: #ffffff;
 }
 

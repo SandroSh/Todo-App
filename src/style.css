@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Philosopher", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.main-div {
+  width: 100vw;
+  height: auto;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.left-container {
+  width: 47vw;
+  height: 100vh;
+  background-color: #0c6767;
+  text-align: center;
+  position: fixed;
+}
+
+.left-container .left-inner-div .submit-div {
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.left-container .left-inner-div .submit-div input {
+  width: 25vw;
+  height: 35px;
+  font-weight: 700;
+  padding: 10px;
+  color: #0c6767;
+  border-style: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+}
+
+.left-container .left-inner-div .submit-div input::-webkit-input-placeholder {
+  color: #d82f35;
+}
+
+.left-container .left-inner-div .submit-div input:-ms-input-placeholder {
+  color: #d82f35;
+}
+
+.left-container .left-inner-div .submit-div input::-ms-input-placeholder {
+  color: #d82f35;
+}
+
+.left-container .left-inner-div .submit-div input::placeholder {
+  color: #d82f35;
+}
+
+.left-container .left-inner-div .submit-div button {
+  margin-left: 20px;
+  width: 20%;
+  height: 35px;
+  border-style: none;
+  border-radius: 3px;
+  background-color: white;
+  color: #0c6767;
+  font-weight: 700;
+}
+
+.left-container .left-inner-div .submit-div button:hover {
+  background-color: #d82f35;
+  color: white;
+  font-weight: 900;
+}
+
+.left-container .statistics-container {
+  margin-top: 40px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left-container .statistics-container h2 {
+  margin-bottom: 30px;
+  letter-spacing: 10px;
+}
+
+.left-container .info-container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #d82f35;
+  padding: 15px;
+}
+
+.left-container .info-container img:hover {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.left-container .creator-h3 {
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.right-container {
+  margin: 50px auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.right-container .main-ul {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-container .main-ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 130px;
+  width: 80%;
+  margin: 10px;
+  background-color: #dddac2;
+  border-radius: 10px;
+  line-height: 1.8em;
+  position: relative;
+}
+
+.right-container .main-ul li input {
+  margin-left: 10px;
+}
+
+.right-container .main-ul li .inner-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 10px;
+  color: #0c6767;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.right-container .main-ul li .inner-div p {
+  margin: 20px 20px 20px 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.right-container .main-ul li button {
+  margin: 10px;
+  border-style: none;
+  background: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #d82f35;
+  position: absolute;
+  text-decoration: none !important;
+  top: 0;
+  right: 0;
+}
+
+.liComp {
+  background-color: #d82f35;
+}
+
+@media (max-width: 840px) {
+  .main-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-div .left-container {
+    width: 100vw;
+    height: auto;
+    position: unset;
+  }
+  .main-div .left-container .left-inner-div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main-div .left-container .left-inner-div .submit-div {
+    margin-bottom: 50px;
+  }
+  .main-div .left-container .left-inner-div .submit-div input {
+    width: 70%;
+  }
+  .main-div .left-container .creator-h3 {
+    font-size: medium;
+  }
+  .main-div .right-container {
+    margin: 50px auto;
+    position: static;
+  }
+  .main-div .right-container .main-ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80vw;
+    margin-bottom: 280px;
+  }
+  .main-div .right-container .main-ul li {
+    width: 100%;
+    font-size: smaller;
+  }
+}
+/*# sourceMappingURL=style.css.map */
